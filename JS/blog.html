@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-lg font-bold mt-12">Discuss the scope of var, let, and const
+    </h1>
+    <section class="flex justify-around gap-7 px-7 mt-10">
+        <div>
+            <p>
+
+<span class="font-bold text-lg ">
+    (1)...var :
+</span>
+var has function-level scope. It is not block-scoped like let and const. This means that var variables are accessible throughout the entire function in which they are declared.
+If a var variable is declared inside a block (e.g., an if statement or a for loop), it is still accessible outside of that block.
+var variables are also hoisted, which means their declarations are moved to the top of the enclosing function or global scope. However, their initializations remain in place.
+            </p>
+        </div>
+     
+        <div>
+            <p>
+
+<span class="font-bold text-lg">
+    (2)...let :
+</span>
+
+let has block-level scope, meaning it is accessible only within the block (enclosed by curly braces) in which it is declared.
+Variables declared with let are not hoisted, and they are not accessible before their declaration point in the code.
+            </p>
+        </div>
+     
+        <div>
+            <p>
+<span class="font-bold text-lg">
+    (3)...const :
+</span>
+const:
+const also has block-level scope, similar to let.
+Variables declared with const are not hoisted.
+Unlike let, const variables must be initialized when declared, and their values cannot be reassigned once they are set. However, for objects and arrays, the properties or elements can be modified.
+            </p>
+        </div>
+    </section>
+
+
+            <h1 class="text-center text-lg font-bold mt-12">The use cases of null and undefined..
+            </h1>
+<section class="flex justify-around px-8 gap-16 mt-12">
+
+            <div>
+                <p> <span class="font-bold text-lg">Undefined:</span>
+                    undefined is a primitive value <br> in JavaScript that represents the absence of a value or the uninitialized state of a variable.
+It is often automatically assigned to a variable when it is declared but not initialized with a value.
+undefined is commonly used when a function doesn't return a value explicitly, or when an expected object property or array element is missing.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span class="font-bold text-lg">
+                        Null:
+                    </span>
+                    null is a special value in JavaScript that represents the intentional absence of any object value.
+It is often explicitly assigned to a variable or property by a programmer to indicate that the variable should have no object reference.
+Unlike undefined, null is an intentional indication of missing or absent value, and it must be assigned explicitly.
+                </p>
+            </div>
+    </section>
+
+    <section>
+        <h1 class="font-bold text-lg mt-12 text-center">What do you mean by REST API?</h1>
+        <div class="text-center mt-6">
+            <p>
+                <span class="font-bold text-lg">Rest API : </span>
+                An API, or application programming interface, is a set of rules that define how applications devices can connect to and communicate with each other. <br> A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
