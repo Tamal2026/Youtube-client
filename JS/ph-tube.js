@@ -1,5 +1,5 @@
-const phTube = async(id)=>{
-    const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/1000`);
+const phTube = async()=>{
+    const res = await fetch(`   https://openapi.programming-hero.com/api/videos/category/1000 `);
     const data = await res.json();
     console.log(data.data);
     const tubeContainer = document.getElementById('tube-container');
@@ -21,11 +21,12 @@ const phTube = async(id)=>{
           </div>
           <div>
           <img class="mt-2" src="${phTubeMain.authors[0].verified ? 'Group 3.png' : 'unverified-image.png'}" alt="">
+          
           </div>
       </div>
         </div>
-   
    </div>
+   <p class ="mt-2 ml-14">${phTubeMain.others.views} views</p>
 
    
          `
@@ -33,7 +34,6 @@ const phTube = async(id)=>{
     })
 
   }
-
 
 const blogBtn = document.getElementById('blog-btn');
 
@@ -43,4 +43,13 @@ blogBtn.addEventListener('click', () => {
   const blogUrl = 'http://127.0.0.1:5500/JS/blog.html';
   window.open(blogUrl,'_blank');
 });
+
+
+// const MusicHandler = async (categoryId)=>{
+
+//   const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`);
+//   const data = await res.json();
+//   console.log(data);
+// }
+
 phTube();
