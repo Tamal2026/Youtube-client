@@ -39,13 +39,13 @@ const handlerLoad = async(id)=>{
   } else {
     data.data.forEach((videos)=>{
       const div = document.createElement('div');
-    div.classList = `  card w-96 bg-base-100 shadow-xl relative `;
+    div.classList = `  card w-96 bg-base-100 shadow-xl relative  `;
     div.innerHTML =` 
      <img src=" ${videos.thumbnail}" alt="" style=" height: 200px;">
-      <div class="absolute bottom-0 right-0">
+      <div class="absolute bottom-40 right-2">
         ${
           videos.others.posted_date
-            ? `<p class="bg-orange-400 px-3 py-2">${videos.others.posted_date}</p>`: ''
+            ? `<p class="bg-gray-900 text-white rounded-md px-3 py-2">${convertTime(videos.others.posted_date)}</p>`: ''
         }
       </div>
       <div class="card-body">
@@ -77,8 +77,17 @@ const handlerLoad = async(id)=>{
 
 
 
-
-
+  function convertTime(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+  
+  
+    return `${hours} hrs ${minutes} min ago`;
+  }
+  
+  
+  console.log(convertedTime);
+  
 
 }
     handleCategory();
