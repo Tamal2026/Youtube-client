@@ -85,10 +85,16 @@ const handlerLoad = async(id)=>{
     return `${hours} hrs ${minutes} min ago`;
   }
   
-  
-  console.log(convertedTime);
-  
-
 }
+
+
+
+const blogBtn = document.getElementById('blog-btn');
+blogBtn.addEventListener('click', () => {
+    const blogUrl = 'http://127.0.0.1:5500/JS/blog.html';
+
+    window.open(blogUrl, '_blank');
+});
+
     handleCategory();
     handlerLoad('1000');
