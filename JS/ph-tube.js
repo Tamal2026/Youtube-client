@@ -25,12 +25,12 @@ const handlerLoad = async(id)=>{
 
     
     const noDataImage = document.createElement('img');
-    noDataImage.src =  `icon.png`
+    noDataImage.src =  './Icon.png';
     noDataImage.alt = '';
 
    
     const noDataMessage = document.createElement('p');
-    noDataMessage.textContent = ' Opps !! Videos available.';
+    noDataMessage.textContent = ' Opps !! No Videos available.';
 
     noDataContainer.appendChild(noDataImage);
     noDataContainer.appendChild(noDataMessage);
