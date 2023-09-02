@@ -39,7 +39,7 @@ const handlerLoad = async(id)=>{
   } else {
     data.data.forEach((videos)=>{
       const div = document.createElement('div');
-    div.classList = `  card w-96 bg-base-100 shadow-xl relative  `;
+    div.classList = `  card w-96 bg-base-100 shadow-sm relative  `;
     div.innerHTML =` 
      <img src=" ${videos.thumbnail}" alt="" style=" height: 200px;">
       <div class="absolute bottom-40 right-2">
