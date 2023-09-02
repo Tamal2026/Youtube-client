@@ -25,7 +25,7 @@ const handlerLoad = async(id)=>{
 
     
     const noDataImage = document.createElement('img');
-    noDataImage.src = 'icon.png';
+    noDataImage.src =  `icon.png`
     noDataImage.alt = '';
 
    
