@@ -6,8 +6,11 @@ const phTube = async()=>{
     data.data.forEach(phTubeMain => {
 
       const div = document.createElement('div');
-      div.classList = `  card w-96 bg-base-100 shadow-xl  `;
+      div.classList = `  card w-96 bg-base-100 shadow-xl relative `;
       div.innerHTML = ` <img src=" ${phTubeMain.thumbnail}" alt="" style=" height: 200px;">
+      <div class="absolute bottom-0 right-0">
+        <p class="bg-orange-400 px-3 py-2">${phTubeMain.others.posted_date}</p>
+    </div>
       <div class="card-body">
       <div class="flex gap-4">
       <div>
